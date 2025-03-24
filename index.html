@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <!-- Css styles -->  
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Magic Store</title>
 </head>
@@ -53,5 +60,44 @@
             <img src="assets/img/header.png" alt="" class="header_img">
         </div>
     </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section_category">
+                <span class="section_reactable"></span>
+                <p class="section_category_p">Today's</p>
+            </div>
+            <div class="section_header">
+                <h3 class="section_title">Flash Sale</h3>
+                <p id="demo"></p>
+            </div>
+
+            <!-- Swiper -->
+             <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/items/item-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/items/item-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">slide 3</div>
+                    <div class="swiper-slide">slide 4</div>
+                    <div class="swiper-slide">slide 5</div>
+                    <div class="swiper-slide">slide 6</div>
+                    <div class="swiper-slide">slide 7</div>
+                    <div class="swiper-slide">slide 8</div>
+                    <div class="swiper-slide">slide 9</div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+             </div>
+        </div>
+    </section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="assets/js/app.js"></script>
 </body>
 </html>
