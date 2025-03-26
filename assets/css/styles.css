@@ -293,5 +293,30 @@
   background-color: var(--color-primary);
   color: var(--color-white-1);
   padding: 1.6rem 3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+}
+
+/* Categories */
+.categories {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-gap: 2rem;
+}
+
+.category {
+  text-align: center;
+  padding: 3rem;
+  border: 1px solid var(--color-white-2);
+  transition: all .3s ease;
+  cursor: pointer;  
+}
+
+.category:hover {
+  background-color: var(--color-primary);  
+}
+
+.category_icon {
+  width: 3.5rem;
+  height: auto;
 }
