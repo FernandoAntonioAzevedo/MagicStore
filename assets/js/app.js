@@ -34,12 +34,12 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
     breakpoints: {
-      420: {
+      330: {
         slidesPerView: 1,
         spaceBetween: 5,
       },
 
-      640: {
+      580: {
         slidesPerView: 2,
         spaceBetween: 10,
       },
