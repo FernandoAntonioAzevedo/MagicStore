@@ -34,10 +34,16 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
     breakpoints: {
+      420: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+
       640: {
         slidesPerView: 2,
         spaceBetween: 10,
       },
+
       768: {
         slidesPerView: 3,
         spaceBetween: 10,
@@ -84,4 +90,12 @@ var swiper = new Swiper(".mySwiper", {
     opacity: 0,
     duration: 1000,
     delay: 100,
+  })
+
+  // mobile nav
+  const hamburger = document.querySelector(".hamburger");
+  const Nav = document.querySelector(".mobile_nav");
+
+  hamburger.addEventListener("click", () => {
+    Nav.classList.toggle("mobile_nav_hide");
   })
