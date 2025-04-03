@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 5, 2025 15:37:25").getTime();
+var countDownDate = new Date("Jun 5, 2025 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -99,3 +99,20 @@ var swiper = new Swiper(".mySwiper", {
   hamburger.addEventListener("click", () => {
     Nav.classList.toggle("mobile_nav_hide");
   })
+
+  // button add to cart
+  const AddToCart = document.querySelectorAll(".add_to_cart");
+
+  AddToCart.forEach(button => {
+    button.addEventListener('click', () => {
+      const id = button.getAttribute('data-id');
+      const title = button.getAttribute('data-title');
+      const image = button.getAttribute('data-image');
+      const price = button.getAttribute('data-price');
+
+      const cartItem = {id, title, image, price};
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];            
+      cart.push(cartItem)
+      localStorage.setItem("cart", JSON.stringify(cart));
+    });
+  });
